@@ -76,18 +76,32 @@ body {
     transform: scale(1.03) ease;
 }
 
-@media (max-width: 500px) {
-    .container {
-        width: 97%;
+@media (max-width: 700px) {
+    .gallary {
+        width: 90%;
+        margin: 0 auto;
     }
     .card {
-        width: 47%;
+        width: 47.5%;
     }
     .top-heading {
         margin-top: 0;
     }
     .card:hover {
-        transform: scale(1.08);
+        transform: scale(1.06);
+    }
+    .card figcaption {
+        font-size: 13px;
+        padding: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .gallary {
+        width: 98%;
+    }
+
+    .card:hover {
+        transform: scale(1.09);
     }
     .card figcaption {
         font-size: 10px;
